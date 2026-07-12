@@ -7,24 +7,38 @@
     <title>Table</title>
 
     <style>
-        table{
+        table {
             border-collapse: collapse;
         }
-        td, th{
+
+        td,
+        th {
             border: 1px solid rgb(0, 0, 0);
             padding: 3px 5px;
             background-color: rgb(236, 236, 236);
         }
-        th{
+
+        th {
             background-color: rgb(228, 225, 177);
         }
-        tfoot td{
+
+        tfoot td {
             text-align: right;
             font-size: 0.5rem;
             color: rgb(255, 255, 255);
             background-color: black;
+            font-weight: 200;
         }
 
+        ul {
+            border: 5px dashed rgb(255, 255, 255);
+            padding: 20px 20px;
+            border-radius: 30px;
+            border-style: groove;
+            background-color: rgb(204, 126, 126);
+            color: rgb(3, 0, 104);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
     </style>
 </head>
 
@@ -68,7 +82,8 @@
             </tfoot>
 
         </table>
-        <ul><li>table: table</li>
+        <ul>
+            <li>table: table</li>
             <li>Caption: caption </li>
             <li>table head: thead </li>
             <li>table body: tbody</li>
