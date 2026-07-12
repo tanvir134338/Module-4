@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 3px 5px;
+            background-color: rgb(236, 236, 236);
+        }
+        th{
+            background-color: rgb(228, 225, 177);
+        }
+        tfoot td{
+            text-align: right;
+            font-size: 0.5rem;
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <main>
+        <h2>Table HTML</h2>
+        <table>
+            <caption>Data for players</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Leonal Messi</td>
+                    <td>Striker</td>
+                    <td>messi@argentina@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Cristiano Ronaldo</td>
+                    <td>All Rounder</td>
+                    <td>cr7@portugal@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Neymar JR</td>
+                    <td>Striker</td>
+                    <td>neymar@brazil@gail.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">
+                        By Fifa
+                    </td>
+                </tr>
+            </tfoot>
+
+        </table>
+        <ul><li>table: table</li>
+            <li>Caption: caption </li>
+            <li>table head: thead </li>
+            <li>table body: tbody</li>
+            <li>table row: tr</li>
+            <li>table data: td </li>
+            <li>table header data: th </li>
+            <li>table footer: tfoot </li>
+            <li>colam span: colspan</li>
+        </ul>
+    </main>
+</body>
+
+</html>
