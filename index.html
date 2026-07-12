@@ -3,215 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex</title>
+    <title>Calander using grid</title>
 
     <style>
         .container{
-            display: flex;
-
-
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: 50px repeat(5, 60px);
+            gap: 20px;
+            background-color: rgb(241, 240, 240);
+            
         }
-        .box{
-            border: 3px solid blue;
-            height: 100px;
-            /* display: inline; */
+        .Month{
+            margin-left: 20px;
+            /* background-color: antiquewhite; */
+        }
+        .day, .day-name{
+            background-color: rgb(255, 172, 172);
+            /* height: 50px; */
+            /* width: 50px; */
+            font-size: 1.3rem;
+            display: flex;
+           justify-content: center;
+            align-items: center;
+            border-radius: 6px;
+        }
+        .day-name{
+            font-size: 1rem;
+            /* height: 30px; */
+            background-color: rgb(161, 220, 255);
         }
     </style>
 </head>
 <body>
+    <!-- .container>div*35{$} -->
+     <div class="Month">
+        <h1>July 2026</h1>
+     </div>
     <div class="container">
-        <div class="box">box -1....container>.box*5{box -$}</div>
-        <div class="box">box -2</div>
-        <div class="box">box -3</div>
-        <div class="box">box -4</div>
-        <div class="box">box -5</div>
+        <div class="day-name">S</div>
+        <div class="day-name">M</div>
+        <div class="day-name">T</div>
+        <div class="day-name">W</div>
+        <div class="day-name">T</div>
+        <div class="day-name">F</div>
+        <div class="day-name">S</div>
+
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div class="day">1</div>
+        <div class="day">2</div>
+        <div class="day">3</div>
+        <div class="day">4</div>
+        <div class="day">5</div>
+        <div class="day">6</div>
+        <div class="day">7</div>
+        <div class="day">8</div>
+        <div class="day">9</div>
+        <div class="day">10</div>
+        <div class="day">11</div>
+        <div class="day">12</div>
+        <div class="day">13</div>
+        <div class="day">14</div>
+        <div class="day">15</div>
+        <div class="day">16</div>
+        <div class="day">17</div>
+        <div class="day">18</div>
+        <div class="day">19</div>
+        <div class="day">20</div>
+        <div class="day">21</div>
+        <div class="day">22</div>
+        <div class="day">23</div>
+        <div class="day">24</div>
+        <div class="day">25</div>
+        <div class="day">26</div>
+        <div class="day">27</div>
+        <div class="day">28</div>
+        <div class="day">29</div>
+        <div class="day">30</div>
+        <div class="day">31</div>
+        <div class="day">1</div>
+        
     </div>
-
-
-
-    <div>
-        <article>
-            <section>
-                <h2>div>article>section>h2</h2>
-            </section>
-        </article>
-    </div>
-
-
-    <div>
-        <article>
-            <section>
-                <h2>div>article*3>section>h2</h2>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2></h2>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2></h2>
-            </section>
-        </article>
-    </div>
-
-    <div>
-        <article>
-            <section>
-                <h2>div>article*3>section>h2+p*2</h2>
-                <p></p>
-                <p></p>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2></h2>
-                <p></p>
-                <p></p>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2></h2>
-                <p></p>
-                <p></p>
-            </section>
-        </article>
-    </div>
-
-    <div>
-        <article>
-            <section>
-                <h2>div>article*3>section>h2+p*2>ul>li*3</h2>
-                <p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </p>
-                <p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </p>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2></h2>
-                <p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </p>
-                <p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </p>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2></h2>
-                <p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </p>
-                <p>
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </p>
-            </section>
-        </article>
-    </div>
-
-    <div class="container">
-        <h2 class="header" id="first">.container>h2.header#first</h2>
-    </div>
-
-    <div>
-        <article>
-            <section>
-                <h2>div>article*3>section>h2+p*2>ul>li*3{ $}</h2>
-                <p>
-                    <ul>
-                        <li> 1</li>
-                        <li> 2</li>
-                        <li> 3</li>
-                    </ul>
-                </p>
-                <p>
-                    <ul>
-                        <li> 1</li>
-                        <li> 2</li>
-                        <li> 3</li>
-                    </ul>
-                </p>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2></h2>
-                <p>
-                    <ul>
-                        <li> 1</li>
-                        <li> 2</li>
-                        <li> 3</li>
-                    </ul>
-                </p>
-                <p>
-                    <ul>
-                        <li> 1</li>
-                        <li> 2</li>
-                        <li> 3</li>
-                    </ul>
-                </p>
-            </section>
-        </article>
-        <article>
-            <section>
-                <h2></h2>
-                <p>
-                    <ul>
-                        <li> 1</li>
-                        <li> 2</li>
-                        <li> 3</li>
-                    </ul>
-                </p>
-                <p>
-                    <ul>
-                        <li> 1</li>
-                        <li> 2</li>
-                        <li> 3</li>
-                    </ul>
-                </p>
-            </section>
-        </article>
-    </div>
-
-    <ul class="container">
-        <li>item -1..ul.container>li*5{item -$}</li>
-        <li>item -2</li>
-        <li>item -3</li>
-        <li>item -4</li>
-        <li>item -5</li>
-    </ul>
-
-
 </body>
 </html>
